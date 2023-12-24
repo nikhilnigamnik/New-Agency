@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --bg-primary: #060918;
+  --bg-secondary: #6919ff;
+  --bg-background: #0c1021;
+  --primary: #f6f7fae9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  font-family: "Poppins", sans-serif;
+  color: var(--primary);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+  letter-spacing: 0.07rem;
+  font-size: 0.9rem;
+}
+p {
+  color: var(--primary);
+  letter-spacing: 0.04rem;
+
+  font-size: 0.9rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+section {
+  margin-top: 4rem;
+}
+
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+.bg {
+  background-color: var(--bg-background);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.borders {
+  border-width: 1px;
+  border-style: solid;
+  border-image-source: linear-gradient(
+    to right,
+    var(--bg-primary),
+    var(--primary),
+    var(--bg-primary)
+  );
+  border-image-slice: 1;
+}
+
+.shadows {
+  box-shadow: 0px 11px 35px 0px #0000000c;
+}
+
+/* loader */
+
+.text-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 73vh;
+}
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(216, 215, 215);
+}
+
+.letter {
+  margin: 0 2px;
+  animation: wave 1.5s infinite;
+  animation-timing-function: linear;
+}
+.font-monoton {
+  font-family: "Monoton", cursive;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.letter:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.letter:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.letter:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.letter:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.letter:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.letter:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.letter:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.letter:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.letter:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.letter:nth-child(10) {
+  animation-delay: 0.9s;
+}
