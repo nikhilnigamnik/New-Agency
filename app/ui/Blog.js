@@ -26,15 +26,15 @@ const Blog = ({ data }) => {
                 <div className="flex items-center mb-4 gap-2">
                   <HiFaceSmile size={25} className="bg border rounded-full "/>
                   <div>
-                    <p className="text-gray-600">admin</p>
-                    <p className="text-gray-600">
+                    <p className="text-gray-400">admin</p>
+                    <p className="text-gray-400">
                       {FormatDateTime(el?.createdAt)}
                     </p>
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {el.tags.map((tag, i) => (
-                    <p className="bg-blue-200 text-blue-700  rounded-full   text-sm px-4 py-1">
+                    <p className="bg-blue-800 text-blue-100  rounded-full   text-sm px-4 py-1">
                       #{tag}
                     </p>
                   ))}
