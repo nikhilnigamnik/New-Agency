@@ -5,8 +5,8 @@ import NavBar from "./ui/NavBar";
 import { WiMeteor } from "react-icons/wi";
 
 export const metadata = {
-  title: "Nikhil Nigam - Full Stack Developer",
-  description: "My personal portfolio showcasing my works",
+  title: "SyncService - A digital agency company",
+  description: "",
 };
 
 export default function RootLayout({ children }) {

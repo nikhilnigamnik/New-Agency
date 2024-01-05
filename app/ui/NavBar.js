@@ -59,7 +59,7 @@ const NavBar = () => {
       </div>
       <div className="flex justify-between items-center container relative p-4">
         <Link href="/">
-          <strong>Nikhil</strong> Nigam
+          <strong>Sync</strong> Service
         </Link>
         <div className="md:block hidden">
           <div className="flex justify-between items-center gap-12 uppercase ">
@@ -86,7 +86,7 @@ const NavBar = () => {
         >
           <div className="flex flex-col justify-center py-10 px-20 relative gap-2">
             <Link className="text-2xl" href="/">
-              <strong>Nikhil</strong> Nigam
+              <strong>Sync</strong> Service
             </Link>
             <Link className="text-xl font-bold mt-8 " href="/">
               Home

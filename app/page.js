@@ -15,6 +15,7 @@ import Loader from "./components/Loader";
 const Home = () => {
   const [projectData, setProjectData] = useState([]);
   const [serviceData, setServiceData] = useState([]);
+  const [blogData, setBlogData] = useState([]);
   const [loading, setLoading] = useState(false);
   const ref = useRef(null);
 
@@ -44,6 +45,18 @@ const Home = () => {
     }
   };
 
+  const getBlogData = async () => {
+    try {
+      setLoading(true);
+      const res = await axios.get("/api/blog");
+      setBlogData(res.data);
+    } catch (error) {
+      console.log(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   useEffect(() => {
     getServiceData();
   }, []);
@@ -52,18 +65,22 @@ const Home = () => {
     getProjectData();
   }, []);
 
+  useEffect(() => {
+    getBlogData();
+  }, []);
+
   return (
     <>
       <LoadingBar color="#6919ff" ref={ref} />
+      <Hero />
       {loading ? (
         <Loader />
       ) : (
         <>
-          <Hero />
           {/* <About /> */}
           <Works data={projectData} />
           <Service data={serviceData} />
-          <Blog />
+          <Blog data={blogData} />
           <Faq />
           <ProjectStart />
         </>

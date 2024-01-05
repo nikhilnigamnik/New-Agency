@@ -5,6 +5,7 @@ const Button = ({
   colorVariant = "primary",
   className,
   sizeVariant = "sm",
+  type,
   ...props
 }) => {
   const colorVariants = {
@@ -13,10 +14,9 @@ const Button = ({
   };
 
   const sizeVarient = {
-    xs:"py-1 px-4",
+    xs: "py-1 px-4",
     sm: "py-2 px-6",
     lg: "py-3 px-10",
-
   };
 
   const buttonClass = `button ${colorVariants[colorVariant] || "primary"} ${
@@ -24,7 +24,11 @@ const Button = ({
   }`;
 
   return (
-    <button className={`rounded-full w-fit ${buttonClass}`} {...props}>
+    <button
+      type={type}
+      className={`rounded-full w-fit ${buttonClass}`}
+      {...props}
+    >
       {children}
     </button>
   );
