@@ -48,13 +48,19 @@ const NavBar = () => {
       <div className=" border-b-2 border-gray-800 py-1 px-4">
         <div className="flex justify-between max-w-6xl m-auto">
           <div className="flex items-center gap-4">
-            <link href="mailto:syncservicestudio@gmail.com">
-              <CiMail />{" "}
-              <span className="text-gray-400">syncservicestudio@gmail.com</span>
-            </link>
+            <CiMail />{" "}
+            <Link href={"mailto:syncservicestudio.gmail.com"}>
+              syncservicestudio.gmail.com
+            </Link>
           </div>
           <div className="flex justify-between items-center gap-4">
-            <FaWhatsapp /> <span className="text-gray-400">+91-7464049583</span>
+            <FaWhatsapp />{" "}
+            <Link
+              href={"whatsapp://send?phone=7464049583"}
+              className="text-gray-400"
+            >
+              +91-7464049583
+            </Link>
             <AiOutlineInstagram />
             <FaLinkedinIn />
           </div>
