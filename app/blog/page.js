@@ -4,6 +4,7 @@ import Tag from "../components/Tag";
 import Link from "next/link";
 import Section from "../components/Section";
 import axios from "axios";
+import Image from "next/image";
 
 const page = () => {
   const [posts, setPosts] = useState([]);
@@ -29,7 +30,7 @@ const page = () => {
       <div className="grid gap-6 gap-y-10 py-6 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <div key={post.title} className="borders bg p-4 rounded-xl">
-            <img src={post.banner} className="rounded-xl" alt="blogPoster" />
+            <Image src={post.banner} className="rounded-xl" alt="blogPoster" />
             <div className="min-h-min p-3">
               <p className="mt-4 w-full text-xs font-semibold leading-tight text-gray-400">
                 #{post.category}
@@ -43,10 +44,9 @@ const page = () => {
                 {post.description}
               </p>
               <div className="mt-4 flex space-x-3 ">
-                <img
+                <Image
                   className="h-10 bg-primary w-10 rounded-full border"
                   src={post.avatar}
-                  //     alt={post.author}
                 />
                 <div>
                   <p className="text-sm font-semibold leading-tight text-gray-500">
