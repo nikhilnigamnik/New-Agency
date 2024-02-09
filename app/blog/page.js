@@ -6,7 +6,6 @@ import Section from "../components/Section";
 import axios from "axios";
 import Image from "next/image";
 import ClarityContainer from "../components/ClarityContainer";
-
 const page = () => {
   const [posts, setPosts] = useState([]);
 
@@ -25,7 +24,7 @@ const page = () => {
 
   return (
     <Section>
-      <ClarityContainer projectId={"kz5pyv8z7k"}></ClarityContainer>
+     <ClarityContainer projectId={"kz5pyv8z7k"}></ClarityContainer>
       <div className="flex flex-col gap-3 justify-center items-center">
         <Tag>Blog</Tag>
         <h2 className="text-3xl font-bold">Latest Blog</h2>

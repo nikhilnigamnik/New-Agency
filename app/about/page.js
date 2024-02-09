@@ -1,11 +1,13 @@
+"use client"
 import React from "react";
 import Section from "../components/Section";
 import Tag from "../components/Tag";
+import ClarityContainer from "../components/ClarityContainer";
 
 const page = () => {
   return (
     <Section>
-      
+       <ClarityContainer projectId={"kz5pyv8z7k"}></ClarityContainer>
       <div className="flex flex-col gap-3 justify-center items-center">
         <Tag>About</Tag>
       </div>

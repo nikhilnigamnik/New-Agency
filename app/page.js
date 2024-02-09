@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import Hero from "./ui/Hero";
-import About from "./ui/About";
 import Works from "./ui/Works";
 import axios from "axios";
 import Service from "./ui/Service";
@@ -12,7 +11,6 @@ import ProjectStart from "./ui/ProjectStart";
 import Blog from "./ui/Blog";
 import Loader from "./components/Loader";
 import ClarityContainer from "./components/ClarityContainer";
-
 const Home = () => {
   const [projectData, setProjectData] = useState([]);
   const [serviceData, setServiceData] = useState([]);
@@ -72,7 +70,7 @@ const Home = () => {
 
   return (
     <>
-      <ClarityContainer projectId={"kz5pyv8z7k"}></ClarityContainer>
+     <ClarityContainer projectId={"kz5pyv8z7k"}></ClarityContainer>
       <LoadingBar color="#6919ff" ref={ref} />
       <Hero />
       {loading ? (

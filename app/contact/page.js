@@ -43,7 +43,7 @@ const page = () => {
 
   return (
     <Section>
-      <ClarityContainer projectId={"kz5pyv8z7k"}></ClarityContainer>
+    <ClarityContainer projectId={"kz5pyv8z7k"}></ClarityContainer>
       <div className="flex flex-col gap-3 justify-center items-center">
         <Tag>Contact</Tag>
         <h2>Get In Touch</h2>

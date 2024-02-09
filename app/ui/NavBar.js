@@ -9,6 +9,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
+import ClarityContainer from "../components/ClarityContainer";
 
 const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -45,6 +46,7 @@ const NavBar = () => {
         isSticky ? "sticky top-0" : ""
       }`}
     >
+      <ClarityContainer projectId={"kz5pyv8z7k"}></ClarityContainer>
       <div className=" border-b-2 border-gray-800 py-1 px-4">
         <div className="flex justify-between max-w-6xl m-auto">
           <div className="flex items-center gap-4">
