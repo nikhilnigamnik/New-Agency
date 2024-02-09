@@ -30,7 +30,13 @@ const page = () => {
       <div className="grid gap-6 gap-y-10 py-6 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <div key={post.title} className="borders bg p-4 rounded-xl">
-            <Image src={post.banner} className="rounded-xl" alt="blogPoster" />
+            <Image
+              src={post.banner}
+              width={500}
+              height={500}
+              className="rounded-xl"
+              alt="blogPoster"
+            />
             <div className="min-h-min p-3">
               <p className="mt-4 w-full text-xs font-semibold leading-tight text-gray-400">
                 #{post.category}
