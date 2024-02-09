@@ -7,6 +7,7 @@ import Section from "../components/Section";
 import Input from "../components/Input";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+import ClarityContainer from "../components/ClarityContainer";
 
 const page = () => {
   const form = useRef();
@@ -39,8 +40,10 @@ const page = () => {
         }
       );
   };
+
   return (
     <Section>
+      <ClarityContainer projectId={"kz5pyv8z7k"}></ClarityContainer>
       <div className="flex flex-col gap-3 justify-center items-center">
         <Tag>Contact</Tag>
         <h2>Get In Touch</h2>

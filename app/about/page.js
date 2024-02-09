@@ -5,6 +5,7 @@ import Tag from "../components/Tag";
 const page = () => {
   return (
     <Section>
+      
       <div className="flex flex-col gap-3 justify-center items-center">
         <Tag>About</Tag>
       </div>

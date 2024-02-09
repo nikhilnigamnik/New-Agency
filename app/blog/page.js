@@ -5,6 +5,7 @@ import Link from "next/link";
 import Section from "../components/Section";
 import axios from "axios";
 import Image from "next/image";
+import ClarityContainer from "../components/ClarityContainer";
 
 const page = () => {
   const [posts, setPosts] = useState([]);
@@ -21,8 +22,10 @@ const page = () => {
   useEffect(() => {
     getBlogData();
   }, []);
+
   return (
     <Section>
+     <ClarityContainer projectId={"kz5pyv8z7k"}></ClarityContainer>
       <div className="flex flex-col gap-3 justify-center items-center">
         <Tag>Blog</Tag>
         <h2 className="text-3xl font-bold">Latest Blog</h2>
@@ -30,7 +33,7 @@ const page = () => {
       <div className="grid gap-6 gap-y-10 py-6 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <div key={post.title} className="borders bg p-4 rounded-xl">
-            <Image src={post.banner} className="rounded-xl" alt="blogPoster" />
+            <Image width={200} src={post?.banner} className="rounded-xl" alt="blogPoster" />
             <div className="min-h-min p-3">
               <p className="mt-4 w-full text-xs font-semibold leading-tight text-gray-400">
                 #{post.category}
