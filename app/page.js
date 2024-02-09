@@ -11,6 +11,7 @@ import LoadingBar from "react-top-loading-bar";
 import ProjectStart from "./ui/ProjectStart";
 import Blog from "./ui/Blog";
 import Loader from "./components/Loader";
+import ClarityContainer from "./components/ClarityContainer";
 
 const Home = () => {
   const [projectData, setProjectData] = useState([]);
@@ -71,6 +72,7 @@ const Home = () => {
 
   return (
     <>
+      <ClarityContainer projectId={"kz5pyv8z7k"}></ClarityContainer>
       <LoadingBar color="#6919ff" ref={ref} />
       <Hero />
       {loading ? (
